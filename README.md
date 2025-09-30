@@ -24,15 +24,24 @@ This repository is a complete roadmap of my learning & development in the **MERN
 ## 📂 Repository Structure  
 
 ```bash
-📦 Frag--Web--development
+📦 Frag--Web--development  
+
 ┣ 📂 01_HTML_CSS           # HTML + CSS practice, layouts, UI components  
+
 ┣ 📂 02_JavaScript         # Core JS + ES6 concepts, problem solving  
+
 ┣ 📂 03_DOM_Projects       # Mini interactive projects using DOM  
+
 ┣ 📂 04_React              # React apps & components  
+
 ┣ 📂 05_Node_Express       # Backend APIs with Node & Express  
+
 ┣ 📂 06_MongoDB            # Database schemas & queries  
+
 ┣ 📂 07_MERN_Projects      # Full-stack MERN apps  
+
 ┣ 📂 assets                # Images, icons, extra resources  
+
 ┗ 📜 README.md             # Project documentation  
 ```
 
@@ -82,3 +91,4 @@ By the end of this journey, it will include:
 💡 Stay tuned for updates – projects will keep coming in as I progress!  
 
 ---
+
