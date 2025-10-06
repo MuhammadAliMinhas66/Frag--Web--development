@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noob Weather</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 320px;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .weather-info {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .search-box {
+      margin-bottom: 15px;
+    }
+    input {
+      padding: 8px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 8px 12px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Weather for Pro Cities</h1>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button onclick="searchCity()">Search</button>
+    </div>
+
+    <div id="weather">
+      <p class="weather-info"><span class="label">City:</span> <span id="city"></span></p>
+      <p class="weather-info"><span class="label">Temperature:</span> <span id="temp"></span></p>
+      <p class="weather-info"><span class="label">Wind:</span> <span id="wind"></span></p>
+      <p class="weather-info"><span class="label">Condition:</span> <span id="condition"></span></p>
+    </div>
+  </div>
+
+  <script>
+    // api key ; 24de8109c4414e83a48100617250210
+    const getWhetherData = async (city) => {
+      try {
+        const data = await fetch(`https://api.weatherapi.com/v1/current.json?key=24de8109c4414e83a48100617250210&q=${city}&aqi=no`);
+        const convertedData = await data.json();
+        console.log(convertedData);
+        
+
+        if (convertedData.error) {
+          document.getElementById("city").textContent = "City not found";
+          document.getElementById("temp").textContent = "";
+          document.getElementById("wind").textContent = "";
+          document.getElementById("condition").textContent = "";
+          return;
+        }
+
+        const { name, region, country } = convertedData.location;
+        const { temp_c, temp_f, wind_mph } = convertedData.current;
+        const { text } = convertedData.current.condition;
+
+        document.getElementById("city").textContent = `${name}, ${region}, ${country}`;
+        document.getElementById("temp").textContent = `${temp_c} °C / ${temp_f} °F`;
+        document.getElementById("wind").textContent = `${wind_mph} mph`;
+        document.getElementById("condition").textContent = text;
+      } catch (error) {
+        document.getElementById("city").textContent = "Error fetching data";
+      }
+    };
+
+
+    function searchCity() {
+      const city = document.getElementById("cityInput").value;
+      if (city) {
+        getWhetherData(city);
+      }
+    }
+
+  
+    getWhetherData("Hazro");
+  </script>
+</body>
+</html>
