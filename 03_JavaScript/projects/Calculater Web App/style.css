@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', 'Comfortaa', cursive;
+    font-weight: 600;
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.calculator-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    width: 100%;
+}
+
+.screen {
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: right;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.current-number {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Comfortaa', cursive;
+    word-wrap: break-word;
+    word-break: break-all;
+    letter-spacing: 1px;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'Fredoka', cursive;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 50px;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.number-btn {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.number-btn:hover {
+    background: #e0e0e0;
+}
+
+.operation-btn {
+    background: #ff9500;
+    color: white;
+}
+
+.operation-btn:hover {
+    background: #e68400;
+}
+
+.clear-btn {
+    background: #ff6b6b;
+    color: white;
+}
+
+.clear-btn:hover {
+    background: #ff5252;
+}
+
+.equals-btn {
+    background: #4ecdc4;
+    color: white;
+    grid-row: span 2;
+}
+
+.equals-btn:hover {
+    background: #45b7aa;
+}
+
+.zero-btn {
+    grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+    .calculator-box {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .btn {
+        padding: 15px;
+        font-size: 1em;
+    }
+    
+    .current-number {
+        font-size: 1.3em;
+    }
+}
