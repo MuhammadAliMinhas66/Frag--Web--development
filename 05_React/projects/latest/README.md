@@ -1,4 +1,4 @@
-# 🧠 Noobify Quiz - React Quiz App
+#  Noobify Quiz - React Quiz App
 
 A beautiful and interactive quiz application built with React and Tailwind CSS that fetches questions from Open Trivia Database API.
 
@@ -6,23 +6,23 @@ A beautiful and interactive quiz application built with React and Tailwind CSS t
 ![Tailwind](https://img.shields.io/badge/Tailwind-v4-cyan.svg)
 ![Vite](https://img.shields.io/badge/Vite-5+-purple.svg)
 
-## ✨ Features
+##  Features
 
-- 🎯 **Real-time Quiz** - Fetches fresh questions from Open Trivia DB
-- 🎨 **Beautiful UI** - Stunning gradients and smooth animations
-- 📊 **Progress Tracking** - Visual progress bar and score display
-- 🔄 **Instant Feedback** - Get results immediately after completion
-- 📱 **Fully Responsive** - Works perfectly on all devices
-- 🚀 **Lightning Fast** - Built with Vite for optimal performance
+-  **Real-time Quiz** - Fetches fresh questions from Open Trivia DB
+-  **Beautiful UI** - Stunning gradients and smooth animations
+-  **Progress Tracking** - Visual progress bar and score display
+-  **Instant Feedback** - Get results immediately after completion
+-  **Fully Responsive** - Works perfectly on all devices
+-  **Lightning Fast** - Built with Vite for optimal performance
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **React 18+** - Modern React with Hooks
 - **Tailwind CSS v4** - Utility-first CSS framework
 - **Vite** - Next generation frontend tooling
 - **Open Trivia DB API** - Free quiz questions database
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -36,15 +36,15 @@ A beautiful and interactive quiz application built with React and Tailwind CSS t
 git clone https://github.com/MuhammadAliMinhas66/Frag--Web--development.git
 cd quiz-app
 ```
-Install dependencies
+### Install dependencies
 ```
 npm install
 ```
-Start development server
+### Start development server
 ```
 npm run dev
 ```
-Open your browser
+### Open your browser
 ```
 http://localhost:5173
 📁 Project Structure
@@ -58,7 +58,7 @@ quiz-app/
 └── vite.config.js
 ```
 
-🎮 How to Use
+### How to Use
 ```
 Click "Quiz Shuru Karo" on the home page
 Select your answer from the options
@@ -67,7 +67,7 @@ View your final score at the end
 Click "Dobara Try Karo" to restart
 ```
 
-### 🌈 Features Breakdown
+###  Features Breakdown
 Home Page
 
 Clean and inviting interface
@@ -88,7 +88,7 @@ Final score with percentage
 Emoji feedback based on performance
 Option to retry quiz
 
-### 🎨 Color Scheme
+###  Color Scheme
 ```
 Home: Cyan → Blue → Indigo gradient
 Quiz: Orange → Red → Pink gradient
@@ -96,7 +96,7 @@ Results: Green → Teal → Blue gradient
 Accent: Purple → Pink gradient
 ```
 
-### 🔧 Configuration
+###  Configuration
 To modify quiz settings, edit the API call in App.jsx:
 ```
 javascriptconst api_ka_response = await fetch(
@@ -110,19 +110,19 @@ category - Category ID (9 = General Knowledge)
 difficulty - easy, medium, or hard
 type - multiple (multiple choice)
 ```
-### 📦 Build for Production
+###  Build for Production
 ```
 npm run build
 ```
 This creates an optimized production build in the dist/ folder.
-### 🌐 Deploy
+###  Deploy
 Deploy easily to:
 ```
 Vercel: vercel deploy
 Netlify: Drag & drop dist folder
 GitHub Pages: Use gh-pages branch
 ```
-### 🤝 Contributing
+###  Contributing
 Contributions are welcome! Feel free to:
 
 Fork the repository
@@ -132,19 +132,21 @@ Push to the branch
 Open a Pull Request
 
 
-📝 License
+### License
 MIT License - feel free to use this project for learning or personal use!
-👨‍💻 Author
+### Author
 Muhammad Ali Minhas
 
+```
 GitHub: @MuhammadAliMinhas66
+```
 
-🙏 Acknowledgments
+###  Acknowledgments
 
 Open Trivia Database for free quiz API
 Tailwind CSS for styling
 React for the framework
 
 
-⭐ Star this repo if you found it helpful!
+### Star this repo if you found it helpful!
 Made with ❤️ and React
