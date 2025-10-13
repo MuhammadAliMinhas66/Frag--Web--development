@@ -45,7 +45,7 @@ Start development server
 npm run dev
 ```
 Open your browser
-
+```
 http://localhost:5173
 📁 Project Structure
 quiz-app/
@@ -122,7 +122,7 @@ Create a feature branch
 Commit your changes
 Push to the branch
 Open a Pull Request
-
+```
 📝 License
 MIT License - feel free to use this project for learning or personal use!
 👨‍💻 Author
