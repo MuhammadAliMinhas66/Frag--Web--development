@@ -35,15 +35,15 @@ A beautiful and interactive quiz application built with React and Tailwind CSS t
 ```bash
 git clone https://github.com/MuhammadAliMinhas66/Frag--Web--development.git
 cd quiz-app
-
+```
 Install dependencies
-
-bashnpm install
-
+```
+npm install
+```
 Start development server
-
-bashnpm run dev
-
+```
+npm run dev
+```
 Open your browser
 
 http://localhost:5173
