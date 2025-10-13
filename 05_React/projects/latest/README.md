@@ -89,11 +89,12 @@ Emoji feedback based on performance
 Option to retry quiz
 
 ### 🎨 Color Scheme
-
+```
 Home: Cyan → Blue → Indigo gradient
 Quiz: Orange → Red → Pink gradient
 Results: Green → Teal → Blue gradient
 Accent: Purple → Pink gradient
+```
 
 ### 🔧 Configuration
 To modify quiz settings, edit the API call in App.jsx:
@@ -129,7 +130,7 @@ Create a feature branch
 Commit your changes
 Push to the branch
 Open a Pull Request
-```
+
 
 📝 License
 MIT License - feel free to use this project for learning or personal use!
