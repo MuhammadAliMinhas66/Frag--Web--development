@@ -56,22 +56,25 @@ quiz-app/
 ├── public/
 ├── package.json
 └── vite.config.js
-🎮 How to Use
+```
 
+🎮 How to Use
+```
 Click "Quiz Shuru Karo" on the home page
 Select your answer from the options
 Click "Agla Sawal" to move to next question
 View your final score at the end
 Click "Dobara Try Karo" to restart
+```
 
-🌈 Features Breakdown
+### 🌈 Features Breakdown
 Home Page
 
 Clean and inviting interface
 Eye-catching gradient background
 Animated hover effects
 
-Quiz Interface
+### Quiz Interface
 
 Question counter
 Progress bar
@@ -79,42 +82,46 @@ Progress bar
 Visual feedback on selection
 Current score display
 
-Results Page
+### Results Page
 
 Final score with percentage
 Emoji feedback based on performance
 Option to retry quiz
 
-🎨 Color Scheme
+### 🎨 Color Scheme
 
 Home: Cyan → Blue → Indigo gradient
 Quiz: Orange → Red → Pink gradient
 Results: Green → Teal → Blue gradient
 Accent: Purple → Pink gradient
 
-🔧 Configuration
+### 🔧 Configuration
 To modify quiz settings, edit the API call in App.jsx:
+```
 javascriptconst api_ka_response = await fetch(
   'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
 );
-Parameters:
-
+```
+### Parameters:
+```
 amount - Number of questions (1-50)
 category - Category ID (9 = General Knowledge)
 difficulty - easy, medium, or hard
 type - multiple (multiple choice)
-
-📦 Build for Production
-bashnpm run build
+```
+### 📦 Build for Production
+```
+npm run build
+```
 This creates an optimized production build in the dist/ folder.
-🌐 Deploy
+### 🌐 Deploy
 Deploy easily to:
-
+```
 Vercel: vercel deploy
 Netlify: Drag & drop dist folder
 GitHub Pages: Use gh-pages branch
-
-🤝 Contributing
+```
+### 🤝 Contributing
 Contributions are welcome! Feel free to:
 
 Fork the repository
@@ -123,6 +130,7 @@ Commit your changes
 Push to the branch
 Open a Pull Request
 ```
+
 📝 License
 MIT License - feel free to use this project for learning or personal use!
 👨‍💻 Author
